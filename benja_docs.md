@@ -9,3 +9,14 @@
 - static struct PyModuleDef mymodulemodule: Uma estrutura que define o módulo Python, incluindo seu nome, métodos e outras informações.
 
 - PyMODINIT_FUNC PyInit_mymodule(void): A função de inicialização do módulo, que é chamada quando o módulo é importado no Python. Ela cria e retorna o objeto de módulo Python.
+
+mymodule.hello
+ex:
+```
+    >>> import mymodule
+    >>> print(mymodule)
+    <module 'mymodule' (built-in)>
+    >>> mymodule.hello('ola')
+    Hello, ola!
+    >>> quit()
+```
